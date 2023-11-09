@@ -3,11 +3,13 @@
     "redhat.telemetry.enabled": true,
     "editor.inlineSuggest.enabled": true,
     "workbench.iconTheme": "vscode-icons",
-    "python.defaultInterpreterPath": "C:\\Users\\Dsaad\\anaconda3\\envs\\duckdb\\python.exe",
     "editor.fontFamily": "Consolas, 'Courier New', 'CaskaydiaCove Nerd Font'",
     "security.workspace.trust.untrustedFiles": "open",
     "editor.largeFileOptimizations": false,
     "editor.minimap.enabled": false,
+    "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font Mono",
+    "terminal.integrated.fontWeight": "normal",
+    "terminal.integrated.fontSize": 14,
     "terminal.integrated.defaultProfile.windows": "PowerShell",
     "terminal.integrated.profiles.windows": {
         "PowerShell": {
