@@ -1,6 +1,6 @@
 {
     "sourcery.token": "user_t9EGaxC9PWdcbmuFIuWO__UTprwwe2vYwssSVAQXbgIilwJ1TN_99SgoWhQ",
-    "redhat.telemetry.enabled": true,
+    "redhat.telemetry.enabled": false,
     "editor.inlineSuggest.enabled": true,
     "workbench.iconTheme": "vscode-icons",
     "editor.fontFamily": "Consolas, 'Courier New', 'CaskaydiaCove Nerd Font'",
