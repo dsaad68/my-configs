@@ -87,29 +87,29 @@
         },
         "FIXME": {
             "icon": "flame",
-            "iconColour": "#FF2D00",
+            "iconColour": "#FF2D00"
         },
         "XXX": {
             "icon": "x"
         },
         "[ ]": {
             "icon": "issue-draft",
-            "iconColour": "#c345e9",
+            "iconColour": "#c345e9"
         },
         "[x]": {
             "icon": "issue-closed",
-            "iconColour": "#521d63",
+            "iconColour": "#521d63"
         },
         "LEARN": {
             "icon": "book",
             "iconColour": "#0071B1",
-            "gutterIcon": true,
+            "gutterIcon": true
         },
         "TODO": {
             "icon": "checkbox",
             "iconColour": "#FF8C00",
-            "gutterIcon": true,
-        },
+            "gutterIcon": true
+        }
     },
     "todo-tree.highlights.backgroundColourScheme": [
         "red",
