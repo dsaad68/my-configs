@@ -1,0 +1,60 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "ctrl+shift+l ctrl+shift+k",
+        "command": "workbench.action.editor.changeLanguageMode",
+        "when": "!notebookEditorFocused"
+    },
+    {
+        "key": "ctrl+k m",
+        "command": "-workbench.action.editor.changeLanguageMode",
+        "when": "!notebookEditorFocused"
+    },
+    {
+        "key": "ctrl+shift+alt+enter",
+        "command": "workbench.action.tasks.runTask",
+        "args": "go run"
+    },
+    {
+        "key": "shift+ctrl+alt+f",
+        "command": "toggle",
+        "when": "editorTextFocus",
+        "args":{
+            "id": "hinting1",
+            "value":[
+                {
+                    "python.analysis.inlayHints.functionReturnTypes": true
+                },
+                {
+                    "python.analysis.inlayHints.functionReturnTypes": false
+                }
+            ]
+        }
+    },
+    {
+        "key": "shift+ctrl+alt+v",
+        "command": "toggle",
+        "when": "editorTextFocus",
+        "args": {
+            "id": "hinting2",
+            "value": [
+                {
+                    "python.analysis.inlayHints.variableTypes": true
+                },
+                {
+                    "python.analysis.inlayHints.variableTypes": false
+                }
+            ]
+        }
+    },
+    {
+        "key": "ctrl+shift+alt+y",
+        "command": "sourcery.chat.ask",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+y",
+        "command": "-sourcery.chat.ask",
+        "when": "editorTextFocus"
+    }
+]
