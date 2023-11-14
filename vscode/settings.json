@@ -69,38 +69,38 @@
         "FIX": {
             "icon": "tools",
             "iconColour": "#FF2D00",
-            "gutterIcon": true,
+            "gutterIcon": true
         },
         "BUG": {
             "icon": "bug",
             "iconColour": "#FF2D00",
-            "gutterIcon": true,
+            "gutterIcon": true
         },
         "[ ]": {
             "icon": "issue-draft",
             "iconColour": "#c345e9",
-            "gutterIcon": true,
+            "gutterIcon": true
         },
         "[x]": {
             "icon": "issue-closed",
             "iconColour": "#521d63",
-            "gutterIcon": true,
+            "gutterIcon": true
         },
         "LEARN": {
             "icon": "book",
             "iconColour": "#0071B1",
-            "gutterIcon": true,
+            "gutterIcon": true
         },
         "TODO": {
             "icon": "checkbox",
             "iconColour": "#FF8C00",
-            "gutterIcon": true,
+            "gutterIcon": true
         },
         "CHECK": {
             "icon": "search",
             "iconColour": "#CA686B",
-            "gutterIcon": true,
-        },
+            "gutterIcon": true
+        }
     },
     "todo-tree.general.tags": [
         "BUG",
