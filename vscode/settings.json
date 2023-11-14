@@ -3,13 +3,11 @@
     "redhat.telemetry.enabled": false,
     "editor.inlineSuggest.enabled": true,
     "workbench.iconTheme": "vscode-icons",
+    "python.defaultInterpreterPath": "C:\\Users\\Dsaad\\anaconda3\\envs\\duckdb\\python.exe",
     "editor.fontFamily": "Consolas, 'Courier New', 'CaskaydiaCove Nerd Font'",
     "security.workspace.trust.untrustedFiles": "open",
     "editor.largeFileOptimizations": false,
     "editor.minimap.enabled": false,
-    "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font Mono",
-    "terminal.integrated.fontWeight": "normal",
-    "terminal.integrated.fontSize": 14,
     "terminal.integrated.defaultProfile.windows": "PowerShell",
     "terminal.integrated.profiles.windows": {
         "PowerShell": {
@@ -65,93 +63,74 @@
         "192.168.178.38": "linux"
     },
     "todo-tree.tree.expanded": true,
-    "todo-tree.highlights.foregroundColourScheme": [
-        "black",
-        "black",
-        "black",
-        "white",
-        "white",
-        "white",
-        "black"
-    ],
-    "todo-tree.highlights.defaultHighlight": {},
     "todo-tree.tree.filterCaseSensitive": true,
     "todo-tree.highlights.useColourScheme": true,
     "todo-tree.highlights.customHighlight": {
+        "FIX": {
+            "icon": "tools",
+            "iconColour": "#FF2D00",
+            "gutterIcon": true,
+        },
         "BUG": {
             "icon": "bug",
-            "iconColour": "#FF2D00"
-        },
-        "HACK": {
-            "icon": "tools"
-        },
-        "FIXME": {
-            "icon": "flame",
-            "iconColour": "#FF2D00"
-        },
-        "XXX": {
-            "icon": "x"
+            "iconColour": "#FF2D00",
+            "gutterIcon": true,
         },
         "[ ]": {
             "icon": "issue-draft",
-            "iconColour": "#c345e9"
+            "iconColour": "#c345e9",
+            "gutterIcon": true,
         },
         "[x]": {
             "icon": "issue-closed",
-            "iconColour": "#521d63"
+            "iconColour": "#521d63",
+            "gutterIcon": true,
         },
         "LEARN": {
             "icon": "book",
             "iconColour": "#0071B1",
-            "gutterIcon": true
+            "gutterIcon": true,
         },
         "TODO": {
             "icon": "checkbox",
             "iconColour": "#FF8C00",
-            "gutterIcon": true
-        }
+            "gutterIcon": true,
+        },
+        "CHECK": {
+            "icon": "search",
+            "iconColour": "#CA686B",
+            "gutterIcon": true,
+        },
     },
-    "todo-tree.highlights.backgroundColourScheme": [
-        "red",
-        "orange",
-        "red",
-        "orange",
-        "blue",
-        "indigo",
-        "violet",
-        "blue"
-    ],
     "todo-tree.general.tags": [
         "BUG",
-        "HACK",
         "FIX",
         "TODO",
-        "XXX",
         "[ ]",
         "[x]",
-        "LEARN"
+        "LEARN",
+        "CHECK"
     ],
     "todo-tree.general.showActivityBarBadge": true,
     "todo-tree.highlights.enabled": false,
-    "errorLens.messageEnabled": false,
     "better-comments.highlightPlainText": true,
     "better-comments.tags": [
         {
-            "tag": "fix",
+            "tag": "FIX",
             "color": "#FF2D00",
             "strikethrough": false,
             "underline": false,
             "backgroundColor": "transparent",
-            "bold": false,
+            "bold":true,
             "italic": false
         },
         {
-            "tag": "bug",
+            "tag": "BUG",
             "color": "#FF2D00",
             "strikethrough": false,
             "underline": false,
             "backgroundColor": "transparent",
-            "bold": false,
+            "bold": true,
             "italic": false
         },
         {
@@ -170,10 +149,10 @@
             "underline": false,
             "backgroundColor": "transparent",
             "bold": false,
-            "italic": false
+            "italic": true
         },
         {
-            "tag": "todo",
+            "tag": "TODO",
             "color": "#FF8C00",
             "strikethrough": false,
             "underline": false,
@@ -205,7 +184,7 @@
             "strikethrough": false,
             "underline": false,
             "backgroundColor": "transparent",
-            "bold": false,
+            "bold": true,
             "italic": false
         },
         {
@@ -214,7 +193,34 @@
             "strikethrough": false,
             "underline": false,
             "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "CHECK",
+            "color": "#CA686B",
+            "strikethrough": false,
+            "underline": true,
+            "backgroundColor": "transparent",
             "bold": true,
+            "italic": false
+        },
+        {
+            "tag": "[ ]",
+            "color": "#c345e9",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "[X]",
+            "color": "#521d63",
+            "strikethrough": true,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
             "italic": false
         }
     ],
@@ -224,6 +230,7 @@
         "rust": false
     },
     "python.analysis.inlayHints.callArgumentNames": "all",
+    "python.experiments.optInto": ["pythonREPLSmartSend"],
     "rust-analyzer.checkOnSave": true,
     "rust-analyzer.check.command": "clippy",
     "rust-analyzer.inlayHints.closureCaptureHints.enable": true,
@@ -245,6 +252,7 @@
     "rust-analyzer.lens.references.adt.enable": true,
     "rust-analyzer.interpret.tests": true,
     "rust-analyzer.hover.actions.references.enable": true,
+    "errorLens.messageEnabled": false,
     "errorLens.editorHoverPartsEnabled": {
         "messageEnabled": true
     }
