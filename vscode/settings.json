@@ -197,7 +197,7 @@
             "italic": false
         },
         {
-            "tag": "CHECK",
+            "tag": "CHECK:",
             "color": "#CA686B",
             "strikethrough": false,
             "underline": true,
@@ -255,5 +255,8 @@
     "errorLens.messageEnabled": false,
     "errorLens.editorHoverPartsEnabled": {
         "messageEnabled": true
-    }
+    },
+    "todo-tree.tree.buttons.export": true,
+    "todo-tree.tree.buttons.groupBySubTag": true,
+    "todo-tree.tree.buttons.scanMode": true
 }
