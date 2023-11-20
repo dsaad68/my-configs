@@ -1,13 +1,20 @@
 {
-    "sourcery.token": "user_t9EGaxC9PWdcbmuFIuWO__UTprwwe2vYwssSVAQXbgIilwJ1TN_99SgoWhQ",
-    "redhat.telemetry.enabled": false,
-    "editor.inlineSuggest.enabled": true,
+    // Workbench
+    "workbench.startupEditor": "none",
     "workbench.iconTheme": "vscode-icons",
-    "python.defaultInterpreterPath": "C:\\Users\\Dsaad\\anaconda3\\envs\\duckdb\\python.exe",
-    "editor.fontFamily": "Consolas, 'Courier New', 'CaskaydiaCove Nerd Font'",
+
+    // misc
+    "redhat.telemetry.enabled": false,
     "security.workspace.trust.untrustedFiles": "open",
-    "editor.largeFileOptimizations": false,
-    "editor.minimap.enabled": false,
+    "liveServer.settings.donotShowInfoMsg": true,
+
+    // Explorer
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "vsicons.dontShowNewVersionMessage": true,
+
+    // Terminal
+    "terminal.integrated.automationProfile.windows": null,
     "terminal.integrated.defaultProfile.windows": "PowerShell",
     "terminal.integrated.profiles.windows": {
         "PowerShell": {
@@ -26,44 +33,93 @@
             "source": "Git Bash"
         }
     },
-    "workbench.startupEditor": "none",
-    "vsicons.dontShowNewVersionMessage": true,
     "files.watcherExclude": {
         "**/.bloop": true,
         "**/.metals": true,
         "**/.ammonite": true
     },
-    "notebook.output.textLineLimit": 100,
     "autoDocstring.docstringFormat": "numpy",
-    "jupyter.askForKernelRestart": false,
-    "notebook.lineNumbers": "on",
-    "terminal.integrated.automationProfile.windows": null,
     "vs-kubernetes": {
         "vscode-kubernetes.helm-path.windows": "C:\\Users\\Dsaad\\.vs-kubernetes\\tools\\helm\\windows-amd64\\helm.exe"
     },
+
+    // Azure
+    "azureResourceGroups.groupBy": "resourceGroup",
+    "azureResourceManagerTools.parameterFiles": {},
+
+    // Git
     "git.autofetch": true,
     "git.confirmSync": false,
+
+    // Editor
     "editor.accessibilitySupport": "off",
-    "python.analysis.inlayHints.functionReturnTypes": true,
-    "python.analysis.inlayHints.variableTypes": true,
     "editor.inlayHints.enabled": "offUnlessPressed",
     "editor.inlayHints.padding": true,
+    "editor.fontFamily": "Consolas, 'Courier New', 'CaskaydiaCove Nerd Font'",
+    "editor.inlineSuggest.enabled": true,
+    "editor.largeFileOptimizations": false,
+    "editor.minimap.enabled": false,
+
+    // Python
+    "files.trimTrailingWhitespace": true,
+    "testing.automaticallyOpenPeekView": "never",
+    "pythonIndent.trimLinesWithOnlyWhitespace": true,
+    "python.defaultInterpreterPath": "C:\\Users\\Dsaad\\anaconda3\\envs\\duckdb\\python.exe",
+    "python.analysis.inlayHints.variableTypes": true,
+    "python.autoComplete.extraPaths": [],
+    "python.analysis.inlayHints.pytestParameters": true,
+    "python.analysis.extraPaths": [],
+    "python.analysis.inlayHints.functionReturnTypes": true,
+    "python.analysis.inlayHints.callArgumentNames": "all",
+    "python.experiments.optInto": ["pythonREPLSmartSend"],
     "[python]": {
         "diffEditor.ignoreTrimWhitespace": false,
         "editor.wordBasedSuggestions": false,
         "editor.formatOnType": true
     },
-    "python.autoComplete.extraPaths": [],
-    "python.analysis.inlayHints.pytestParameters": true,
-    "python.analysis.extraPaths": [],
+
+    // ERROR LENS
+    "errorLens.messageEnabled": false,
+    "errorLens.editorHoverPartsEnabled": {
+        "messageEnabled": true
+    },
+
+    // Notebook
     "jupyter.interactiveWindow.creationMode": "perFile",
-    "explorer.confirmDelete": false,
+    "jupyter.askForKernelRestart": false,
+    "notebook.output.textLineLimit": 100,
+    "notebook.lineNumbers": "on",
+
+    // RUST
+    "rust-analyzer.checkOnSave": true,
+    "rust-analyzer.check.command": "clippy",
+    "rust-analyzer.inlayHints.closureCaptureHints.enable": true,
+    "rust-analyzer.inlayHints.bindingModeHints.enable": true,
+    "rust-analyzer.semanticHighlighting.punctuation.separate.macro.bang": true,
+    "rust-analyzer.lens.references.trait.enable": true,
+    "rust-analyzer.lens.references.method.enable": true,
+    "rust-analyzer.lens.references.enumVariant.enable": true,
+    "rust-analyzer.lens.references.adt.enable": true,
+    "rust-analyzer.interpret.tests": true,
+    "rust-analyzer.hover.actions.references.enable": true,
+    "rust-analyzer.debug.engineSettings": {
+        "lldb": {
+            "terminal": "external"
+        }
+    },
+
+    // Remote
     "remote.SSH.configFile": "C:\\Users\\Dsaad\\.ssh\\config",
     "remote.SSH.remotePlatform": {
         "192.168.178.38": "linux"
     },
+
+    // TODO Tree
     "todo-tree.tree.expanded": true,
+    "todo-tree.tree.buttons.export": true,
+    "todo-tree.tree.buttons.scanMode": true,
     "todo-tree.tree.filterCaseSensitive": true,
+    "todo-tree.tree.buttons.groupBySubTag": true,
     "todo-tree.highlights.useColourScheme": true,
     "todo-tree.highlights.customHighlight": {
         "FIX": {
@@ -100,6 +156,11 @@
             "icon": "search",
             "iconColour": "#CA686B",
             "gutterIcon": true
+        },
+        "IDEA": {
+            "icon": "light-bulb",
+            "iconColour": "#861657",
+            "gutterIcon": true
         }
     },
     "todo-tree.general.tags": [
@@ -109,10 +170,13 @@
         "[ ]",
         "[x]",
         "LEARN",
-        "CHECK"
+        "CHECK",
+        "IDEA"
     ],
     "todo-tree.general.showActivityBarBadge": true,
     "todo-tree.highlights.enabled": false,
+
+    // Better Comments
     "better-comments.highlightPlainText": true,
     "better-comments.tags": [
         {
@@ -222,41 +286,25 @@
             "backgroundColor": "transparent",
             "bold": false,
             "italic": false
+        },
+        {
+            "tag": "IDEA",
+            "color": "#861657",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
         }
     ],
+
+    // Codeium
     "codeium.enableConfig": {
         "*": true,
         "markdown": true,
         "rust": false
     },
-    "python.analysis.inlayHints.callArgumentNames": "all",
-    "python.experiments.optInto": ["pythonREPLSmartSend"],
-    "rust-analyzer.checkOnSave": true,
-    "rust-analyzer.check.command": "clippy",
-    "rust-analyzer.inlayHints.closureCaptureHints.enable": true,
-    "rust-analyzer.inlayHints.bindingModeHints.enable": true,
-    "sourcery.codeLens": false,
-    "azureResourceManagerTools.parameterFiles": {},
-    "azureResourceGroups.groupBy": "resourceGroup",
-    "liveServer.settings.donotShowInfoMsg": true,
-    "explorer.confirmDragAndDrop": false,
-    "rust-analyzer.debug.engineSettings": {
-        "lldb": {
-            "terminal": "external"
-        }
-    },
-    "rust-analyzer.semanticHighlighting.punctuation.separate.macro.bang": true,
-    "rust-analyzer.lens.references.trait.enable": true,
-    "rust-analyzer.lens.references.method.enable": true,
-    "rust-analyzer.lens.references.enumVariant.enable": true,
-    "rust-analyzer.lens.references.adt.enable": true,
-    "rust-analyzer.interpret.tests": true,
-    "rust-analyzer.hover.actions.references.enable": true,
-    "errorLens.messageEnabled": false,
-    "errorLens.editorHoverPartsEnabled": {
-        "messageEnabled": true
-    },
-    "todo-tree.tree.buttons.export": true,
-    "todo-tree.tree.buttons.groupBySubTag": true,
-    "todo-tree.tree.buttons.scanMode": true
+
+    // Sourcery
+    "sourcery.codeLens": false
 }
