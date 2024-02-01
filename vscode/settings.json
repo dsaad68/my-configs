@@ -161,7 +161,12 @@
             "icon": "light-bulb",
             "iconColour": "#861657",
             "gutterIcon": true
-        }
+        },
+        "NOTE": {
+            "icon": "note",
+            "iconColour": "#569cd6",
+            "gutterIcon": true
+        },
     },
     "todo-tree.general.tags": [
         "BUG",
@@ -171,7 +176,8 @@
         "[x]",
         "LEARN",
         "CHECK",
-        "IDEA"
+        "IDEA",
+        "NOTE",
     ],
     "todo-tree.general.showActivityBarBadge": true,
     "todo-tree.highlights.enabled": false,
@@ -290,6 +296,15 @@
         {
             "tag": "IDEA",
             "color": "#861657",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "NOTE",
+            "color": "#569cd6",
             "strikethrough": false,
             "underline": false,
             "backgroundColor": "transparent",
