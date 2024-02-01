@@ -166,7 +166,7 @@
             "icon": "note",
             "iconColour": "#569cd6",
             "gutterIcon": true
-        },
+        }
     },
     "todo-tree.general.tags": [
         "BUG",
@@ -177,7 +177,7 @@
         "LEARN",
         "CHECK",
         "IDEA",
-        "NOTE",
+        "NOTE"
     ],
     "todo-tree.general.showActivityBarBadge": true,
     "todo-tree.highlights.enabled": false,
