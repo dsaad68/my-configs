@@ -137,7 +137,7 @@
             "iconColour": "#c345e9",
             "gutterIcon": true
         },
-        "[x]": {
+        "[X]": {
             "icon": "issue-closed",
             "iconColour": "#521d63",
             "gutterIcon": true
@@ -173,7 +173,7 @@
         "FIX",
         "TODO",
         "[ ]",
-        "[x]",
+        "[X]",
         "LEARN",
         "CHECK",
         "IDEA",
