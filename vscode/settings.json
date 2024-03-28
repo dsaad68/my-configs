@@ -1,7 +1,7 @@
 {
     // Workbench
     "workbench.startupEditor": "none",
-    "workbench.iconTheme": "vscode-icons",
+    "workbench.iconTheme": "material-icon-theme",
 
     // misc
     "redhat.telemetry.enabled": false,
@@ -38,7 +38,6 @@
         "**/.metals": true,
         "**/.ammonite": true
     },
-    "autoDocstring.docstringFormat": "numpy",
     "vs-kubernetes": {
         "vscode-kubernetes.helm-path.windows": "C:\\Users\\Dsaad\\.vs-kubernetes\\tools\\helm\\windows-amd64\\helm.exe"
     },
@@ -64,17 +63,25 @@
     "files.trimTrailingWhitespace": true,
     "testing.automaticallyOpenPeekView": "never",
     "pythonIndent.trimLinesWithOnlyWhitespace": true,
-    "python.defaultInterpreterPath": "C:\\Users\\Dsaad\\anaconda3\\envs\\duckdb\\python.exe",
     "python.analysis.inlayHints.variableTypes": true,
-    "python.autoComplete.extraPaths": [],
     "python.analysis.inlayHints.pytestParameters": true,
-    "python.analysis.extraPaths": [],
-    "python.analysis.inlayHints.functionReturnTypes": true,
     "python.analysis.inlayHints.callArgumentNames": "all",
-    "python.experiments.optInto": ["pythonREPLSmartSend"],
+    "python.analysis.inlayHints.functionReturnTypes": true,
+    "python.defaultInterpreterPath": ".venv\\Scripts\\python.exe",
+    "python.experiments.optInto": [
+        "pythonREPLSmartSend"
+    ],
+    "python.autoComplete.extraPaths": [
+        "c:\\Users\\Dsaad\\.vscode\\extensions\\continue.continue-0.8.1-win32-x64"
+    ],
+    "python.analysis.extraPaths": [
+        "c:\\Users\\Dsaad\\.vscode\\extensions\\continue.continue-0.8.1-win32-x64"
+    ],
+    "autoDocstring.docstringFormat": "numpy",
+
     "[python]": {
         "diffEditor.ignoreTrimWhitespace": false,
-        "editor.wordBasedSuggestions": false,
+        "editor.wordBasedSuggestions": "off",
         "editor.formatOnType": true
     },
 
@@ -89,6 +96,7 @@
     "jupyter.askForKernelRestart": false,
     "notebook.output.textLineLimit": 100,
     "notebook.lineNumbers": "on",
+    "notebook.experimental.variablesView": true,
 
     // RUST
     "rust-analyzer.checkOnSave": true,
@@ -314,12 +322,21 @@
     ],
 
     // Codeium
+    "codeium.enableCodeLens": false,
     "codeium.enableConfig": {
         "*": true,
         "markdown": true,
-        "rust": false
+        "rust": true
     },
 
     // Sourcery
-    "sourcery.codeLens": false
+    "sourcery.codeLens": false,
+    "sourcery.token": "user_t9EGaxC9PWdcbmuFIuWO__UTprwwe2vYwssSVAQXbgIilwJ1TN_99SgoWhQ",
+
+    // Others
+    "continue.showInlineTip": false,
+    "continue.telemetryEnabled": false,
+    "cmake.showOptionsMovedNotification": false
+
+
 }
