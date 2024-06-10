@@ -136,26 +136,39 @@ return {
       config = {
         startVisible = true,
         showBlankVirtLine = true,
-        highlightColor = {fg = '#f72238'},
+        highlightColor = { fg = "#f72238" },
         hints = {
-             Caret = { text = "^", prio = 5 },
-             Dollar = { text = "$", prio = 1 },
-             MatchingPair = { text = "%", prio = 5 },
-             Zero = { text = "0", prio = 1 },
-             w = { text = "w", prio = 10 },
-             b = { text = "b", prio = 9 },
-             e = { text = "e", prio = 8 },
-             W = { text = "W", prio = 7 },
-             B = { text = "B", prio = 6 },
-             E = { text = "E", prio = 5 },
+          Caret = { text = "^", prio = 5 },
+          Dollar = { text = "$", prio = 1 },
+          MatchingPair = { text = "%", prio = 5 },
+          Zero = { text = "0", prio = 1 },
+          w = { text = "w", prio = 10 },
+          b = { text = "b", prio = 9 },
+          e = { text = "e", prio = 8 },
+          W = { text = "W", prio = 7 },
+          B = { text = "B", prio = 6 },
+          E = { text = "E", prio = 5 },
         },
         gutterHints = {
-            G = { text = "G", prio = 10 },
-            gg = { text = "gg", prio = 9 },
-            PrevParagraph = { text = "{", prio = 8 },
-            NextParagraph = { text = "}", prio = 8 },
+          G = { text = "G", prio = 10 },
+          gg = { text = "gg", prio = 9 },
+          PrevParagraph = { text = "{", prio = 8 },
+          NextParagraph = { text = "}", prio = 8 },
         },
       },
+    },
+
+    {
+      "NeogitOrg/neogit",
+      dependencies = {
+        "nvim-lua/plenary.nvim", -- required
+        "sindrets/diffview.nvim", -- optional - Diff integration
+
+        -- Only one of these is needed, not both.
+        "nvim-telescope/telescope.nvim", -- optional
+        -- "ibhagwan/fzf-lua", -- optional
+      },
+      config = true,
     },
   },
 }

@@ -31,4 +31,7 @@ map("n", "<leader>ta", function() require("neotest").run.attach() end, {desc = "
 map("n", "<leader>tv", function() require("neotest").output.open({enter = true}) end, {desc = "Toggle Neotest Output for a test"})
 
 
+-- INFO: For Neogit
+map("n", "<leader>gs", ":Neogit kind=vsplit<CR>", {desc = "Toggle Neogit VSplit"})
+
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
