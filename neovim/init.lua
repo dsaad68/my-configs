@@ -116,6 +116,7 @@ require("neotest").setup {
       -- Runner to use. Will use pytest if available by default.
       -- Can be a function to return dynamic value.
       runner = "pytest",
+      -- INFO: Needs changing based on each venv
       -- Custom python path for the runner.
       -- Can be a string or a list of strings.
       -- Can also be a function to return dynamic value.
@@ -157,7 +158,7 @@ require("noice").setup {
     command_palette = true, -- position the cmdline and popupmenu together
     long_message_to_split = true, -- long messages will be sent to a split
     inc_rename = false, -- enables an input dialog for inc-rename.nvim
-    lsp_doc_border = false, -- add a border to hover docs and signature help
+    lsp_doc_border = true, -- add a border to hover docs and signature help
   },
 }
 
