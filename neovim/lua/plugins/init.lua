@@ -16,6 +16,7 @@ return {
     end,
   },
 
+  -- INFO: Mason for installing and managing LSPs, Lints, Formatter and DAPs
   {
     "williamboman/mason.nvim",
     opts = {
@@ -49,6 +50,7 @@ return {
     },
   },
 
+  -- INFO: for adding test capabilities
   {
     "nvim-neotest/neotest",
     dependencies = {
@@ -66,11 +68,13 @@ return {
     },
   },
 
+  -- INFO: for highlighting comments
   {
     "folke/todo-comments.nvim",
     dependencies = { "nvim-lua/plenary.nvim" },
   },
 
+  -- INFO: For Listing TODO, LSP logs and ...
   {
     "folke/trouble.nvim",
     opts = {}, -- for default options, refer to the configuration section for custom setup.
@@ -108,6 +112,7 @@ return {
       },
     },
 
+    -- INFO: For Command Pallet and notifications
     {
       "folke/noice.nvim",
       event = "VeryLazy",
@@ -124,12 +129,14 @@ return {
       },
     },
 
+    -- INFO: A Plugins for Rust
     {
       "mrcjkb/rustaceanvim",
       version = "^4", -- Recommended
       lazy = false, -- This plugin is already lazy
     },
 
+    -- INFO: For Navigation Hints
     {
       "tris203/precognition.nvim",
       event = "VeryLazy",
@@ -158,6 +165,7 @@ return {
       },
     },
 
+    -- INFO: For Git Operations
     {
       "NeogitOrg/neogit",
       dependencies = {
@@ -169,6 +177,28 @@ return {
         -- "ibhagwan/fzf-lua", -- optional
       },
       config = true,
+    },
+
+    -- INFO: For Markdown Previews
+    {
+      "iamcco/markdown-preview.nvim",
+      cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+      build = "cd app && yarn install",
+      init = function()
+        vim.g.mkdp_filetypes = { "markdown" }
+      end,
+      ft = { "markdown" },
+    },
+
+    {
+      "toppair/peek.nvim",
+      event = { "VeryLazy" },
+      build = "deno task --quiet build:fast",
+      config = function()
+        require("peek").setup()
+        vim.api.nvim_create_user_command("PeekOpen", require("peek").open, {})
+        vim.api.nvim_create_user_command("PeekClose", require("peek").close, {})
+      end,
     },
   },
 }

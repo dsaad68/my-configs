@@ -38,9 +38,9 @@ require("todo-comments").setup {
       alt = { "FIXME", "BUG", "FIXIT", "ISSUE" }, -- a set of other keywords that all map to this FIX keywords
     },
     TODO = { icon = "✅", color = "todo" },
-    INFO = { icon = "ℹ️ ", color = "info", alt = { "info", "INFO" } },
+    INFO = { icon = "ℹ️ ", color = "info", alt = { "info", "Info" } },
     IDEA = { icon = "💡", color = "idea" },
-    NOTE = { icon = "📓", color = "note" },
+    NOTE = { icon = "📓", color = "note", alt = { "Note", "NOTE" } },
     STEP = { icon = "🪜", color = "step" },
     TASK = { icon = "✔️ ", color = "task", alt = { "[ ]", "%[ %]", "%[%s%]" } },
     DONE = { icon = "☑️ ", color = "done", alt = { "[x]", "%[x%]" } },
@@ -164,7 +164,7 @@ require("noice").setup {
 
 require("precognition").peek()
 
-require('neogit').setup{}
+require("neogit").setup {}
 
 -- load theme
 dofile(vim.g.base46_cache .. "defaults")
